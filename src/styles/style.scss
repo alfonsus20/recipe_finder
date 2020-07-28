@@ -1,0 +1,92 @@
+$primary-color: #feb201;
+
+* {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  src: url("../assets/Montserrat-SemiBold.ttf");
+  font-family: Montserrat;
+}
+
+@font-face {
+  src: url("../assets/Roboto-Light.ttf");
+  font-family: Roboto;
+}
+
+@font-face {
+  src: url("../assets/Roboto-Regular.ttf");
+  font-family: Roboto-Regular;
+}
+
+.container-fluid {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+#home {
+  height: 100vh;
+}
+
+landing-page {
+  height: 100vh;
+}
+
+button:hover {
+  color: white !important;
+}
+
+recommendation-menu {
+  padding: 0 10%;
+}
+
+#recommendation {
+  overflow: hidden;
+  background-color: #fafafa;
+}
+
+#recommendation,
+#search-menu {
+  padding: 2.5rem 0 1.5rem 0;
+}
+
+.recommendation-heading,
+.search-heading {
+  font-size: 2.1rem;
+  font-family: "Montserrat";
+}
+
+.recommendation-heading::after,
+.search-heading::after {
+  content: "";
+  display: block;
+  margin: 10px auto 20px auto;
+  width: 12%;
+  height: 3px;
+  background-color: $primary-color;
+}
+
+.search-heading::after {
+  width: 5%;
+}
+
+search-bar {
+  text-align: center;
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: white;
+  background-color: #737373;
+}
+
+@media screen and (max-width: 768px) {
+  #home {
+    height: auto;
+  }
+  .recommendation-heading,
+  .search-heading {
+    font-size: 1.8rem;
+  }
+}
